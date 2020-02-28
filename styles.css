@@ -1,0 +1,14 @@
+.top-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1400px;
+    height: 100px;
+    background-color: tomato;
+}
+
+.auth-but {
+    display: block;
+    width: 100px;
+    height: 30px;
+}
