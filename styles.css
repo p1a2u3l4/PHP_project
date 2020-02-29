@@ -12,3 +12,51 @@
     width: 100px;
     height: 30px;
 }
+
+
+
+.auth-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 300px;        
+}
+
+
+
+
+
+.container-tasks {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 1400px;
+    height: 1200px;
+} 
+
+.tasks-block {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 1200px;
+    flex-wrap: wrap;
+
+}
+.task {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 4px double black;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 180px;
+}
