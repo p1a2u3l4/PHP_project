@@ -7,29 +7,67 @@
     background-color: tomato;
 }
 
+.greets {
+    position: relative;
+    bottom: 6px;
+    right: 10px;
+
+}
+
 .auth-but {
     display: block;
-    width: 100px;
-    height: 30px;
+    position: relative;
+    width: 120px;
+    height: 35px;
+    right: 30px;
+    bottom: 5px;
+
 }
 
 
-
+/* авторизация */
 .auth-block {
     display: flex;
+    background-color: cornflowerblue;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 300px;        
+    padding: 5px;
+    width: 300px;
+    height: 300px; 
+    border: 4px double black;       
+}
+
+
+.inp-auth {
+    padding: 10px;
+    margin: 4px;
+}
+
+.send-but {
+    position: relative;
+    width: 120px;
+    margin: 4px;
+}
+
+.send-but2 {
+    position: relative;
+    width: 120px;
+    margin: 4px;
+    bottom: 30px;
 }
 
 
 
+/* авторизация */
 
+
+
+
+/* задачи */
 
 .container-tasks {
 
@@ -47,16 +85,95 @@
     justify-content: center;
     text-align: center;
     width: 300px;
-    height: 1200px;
+    height: 1150px;
     flex-wrap: wrap;
 
 }
 .task {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     text-align: center;
     border: 4px double black;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 200px;
-    height: 180px;
+    height: 250px;
 }
+
+.change-but {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+
+
+
+.links {
+    position: relative;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+    flex-wrap: wrap;
+    /* width: 20px; */
+    height: 10px;
+    top: 20px;
+    left: 0px;
+
+}
+
+
+.add-but {
+    position: relative;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    top: -50px;
+    /* width: 50px; */
+    height: 5px;
+    right: 220px;
+}
+
+
+/* задачи */
+
+
+
+
+
+/* добавление задачи */
+
+
+.addtask-block {
+    display: flex;
+    background-color: gainsboro;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 235px;
+    height: 380px; 
+    border: 4px double black; 
+}
+
+
+.inp-create {
+    padding: 10px;
+    margin: 4px;
+}
+
+
+/* добавление задачи */

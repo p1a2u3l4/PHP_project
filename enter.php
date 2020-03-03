@@ -1,5 +1,6 @@
 <?$con = mysqli_connect("localhost", "root", "password", "testPHP");
     $errors = array();
+    setcookie("TestCookie", $errors[0]);
         if ($_GET['login'] != "" && $_GET['password'] != "") //если поля заполнены    
 
         {       
@@ -13,28 +14,26 @@
                         if ($password == $result["password"]) {
                             session_start(); 
                             $_SESSION["id"]= $result["id"]; 
-                            //session_start(); 
-                            header ('Location: index.php');
-                            
+                            header ('Location: index.php');                           
                         }
 
                             else { 
                                 $errors[] = "неверный пароль!";
-                                //return $errors;
-                                echo $errors[0];
+                                setcookie("TestCookie", $errors[0]);
+                                header ('Location: auth.php');
                             }
                 }
 
                     else {
                         $errors[] = "Неверный логин и пароль!";           
-                        //return $errors;
-                        echo $errors[0];
+                        setcookie("TestCookie", $errors[0]);
+                        header ('Location: auth.php');
                     }
 
         }
             else    
             {       
                 $errors[] = "Поля не должны быть пустыми!";              
-                //return $errors;  
-                echo $errors[0];
+                setcookie("TestCookie", $errors[0]);
+                header ('Location: auth.php');
             } ?>
